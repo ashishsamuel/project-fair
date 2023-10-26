@@ -6,7 +6,7 @@ function Footer() {
     <div className='d-flex justify-content-center align-items-center flex-column mt-2 shadow w-100 bg-info'>
             <div className='footer-content justify-content-evenly w-100 mt-5' style={{ display: 'flex' }}>
                 <div className='website d-flex flex-column' style={{paddingLeft:'50px'}}>
-                    <div style={{ fontWeight: 'bold' }}>{' '}E-cart</div>
+                    <div style={{ fontWeight: 'bold' }}>{' '}Project-Fair</div>
                     <div className='content'>
                         Designed and built with all the love in the world by the Media team with the help of our contributors.</div>
                     <div>Code licensed Media, docs CC BY 3.0.</div>
