@@ -32,7 +32,7 @@ function ProjectCard() {
                   <p>
                     Project Overview : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti optio ipsam, consectetur praesentium quo ipsa sit aspernatur aut, sunt laboriosam quod debitis, id ipsum tempora?
                   </p>
-                  <p>Lanaguages used : <span className='fw-bolder'>HTML, CSS, React</span></p>
+                  <p>Languages used : <span className='fw-bolder'>HTML, CSS, React</span></p>
                 </Col>
             </Row>
             <div className="mt-3">

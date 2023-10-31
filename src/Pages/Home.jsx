@@ -13,7 +13,7 @@ function Home() {
           <Col sm={12} md={6}>
             <h1 style={{fontSize:'80px'}} className='fw-bolder text-light'>Project Fair</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque, quaerat laborum excepturi error provident officia doloremque id beatae perferendis maxime vitae qui? Iure deleniti voluptatem eos labore doloremque qui!</p>
-            <button className='btn btn-primary'>Start to Explore</button>
+            <Link to={'/login'} className='btn btn-primary'>Start to Explore</Link>
           </Col>
           <Col sm={12} md={6}>
             <img style={{marginTop:'100px'}} src={titleImage} alt="" className='w-75' />
@@ -25,12 +25,6 @@ function Home() {
       <h1 className="text-center mb-5">Explore our Projects</h1>
     <marquee scrollAmount={25}>
       <div className='d-flex justify-content-between'>
-        <div style={{width:'500px'}}>
-          <ProjectCard/>
-        </div>
-        <div style={{width:'500px'}}>
-          <ProjectCard/>
-        </div>
         <div style={{width:'500px'}}>
           <ProjectCard/>
         </div>
