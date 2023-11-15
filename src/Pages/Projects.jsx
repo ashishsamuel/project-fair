@@ -16,7 +16,7 @@ function Projects() {
           </div>
         </div>
         <Row className='mt-5 container-fluid'>
-          <Col sm={12} lg={6} md={4}>
+          <Col sm={12} lg={4} md={4}>
             <ProjectCard/>
           </Col>
         </Row>
