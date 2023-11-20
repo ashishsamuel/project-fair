@@ -35,29 +35,32 @@ function AddProject() {
 
   const handleAdd = async(e)=>{
     e.preventDefault();
+    console.log(projectDetails);
     const {title,languages,overview,github,website,projectImage} = projectDetails
     if(!title || !languages || !overview || !projectImage || !github || !website){
       toast.info("Please fill the completely!!!")
     }else{
       const reqBody = new FormData()
-      FormData.append("title",title)
-      FormData.append("languages",languages)
-      FormData.append("overview",overview)
-      FormData.append("projectImage",projectImage)
-      FormData.append("github",github)
-      FormData.append("website",website)
+      reqBody.append("title",title)
+      reqBody.append("languages",languages)
+      reqBody.append("overview",overview)
+      reqBody.append("projectImage",projectImage)
+      reqBody.append("github",github)
+      reqBody.append("website",website)
 
       if(token){
-        reqHeader = {
+        const reqHeader = {
           "Content-Type":"multipart/form-data",
           "Authorization":`Bearer ${token}`
         }
         const result = await addProjectAPI(reqBody,reqHeader)
       if(result.status === 200){
-        console.log(result.data);        
+        console.log(result.data);    
+        handleClose()
+        alert("Project added")    
       }else{
         console.log(result);
-        console.log(result.response.data);
+        toast.warning(result.response.data);
       }
       }
 
@@ -101,6 +104,7 @@ function AddProject() {
           </Button>
         </Modal.Footer>
       </Modal>
+      <ToastContainer position='top-right' theme='colored' autoClose='2000'/>
     </div>
   )
 }
