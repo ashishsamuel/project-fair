@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Components/Header'
 import { Col, Row } from 'react-bootstrap'
 import ProjectCard from '../Components/ProjectCard'
@@ -6,6 +6,7 @@ import { allProjectsAPI } from '../Services/allAPI'
 
 function Projects() {
   const [allProjects,setAllProjects] = useState([])
+
   const getallProjects = async()=>{
     if(sessionStorage.getItem("token")){
       const token = sessionStorage.getItem("token")
@@ -21,6 +22,10 @@ function Projects() {
       }
     }
   }
+
+  useEffect(()=>{
+    getallProjects()
+  },[])
   return (
     <>
       <Header/>
