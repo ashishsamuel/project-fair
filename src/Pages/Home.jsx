@@ -35,7 +35,7 @@ function Home() {
         <Row className='align-items-center p-5'>
           <Col sm={12} md={6}>
             <h1 style={{fontSize:'80px'}} className='fw-bolder text-light'>Project Fair</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque, quaerat laborum excepturi error provident officia doloremque id beatae perferendis maxime vitae qui? Iure deleniti voluptatem eos labore doloremque qui!</p>
+            <p>One Stop Destination for all Software Development Projects where user can add and manage their projects. As well as access all projects available in our website...</p>
            {loggedIn ? <Link to={'/dashboard'} className='btn btn-primary'>Manage your Projects</Link>
             :<Link to={'/login'} className='btn btn-primary'>Start to Explore</Link>}
           </Col>

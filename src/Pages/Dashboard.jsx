@@ -20,7 +20,7 @@ function Dashboard() {
           {/* my project */}
           <MyProjects/>
         </Col>
-        <Col sm={12} md={4} lg={4} xl={4}>
+        <Col sm={12} md={4} lg={4} xl={4} className='mt-5'>
         {/* my profile */}
         <Profile/>
         </Col>
